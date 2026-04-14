@@ -1,7 +1,9 @@
-# 🎮 Tic-Tac-Toe (Dynamic Grid) – Next.js
+## 🎮 Tic-Tac-Toe (Dynamic Grid) – Next.js
+- Designed By: Onyekachukwu Anene
 
 A fully interactive, scalable Tic-Tac-Toe game built with Next.js and React.  
 This project extends the classic game into a flexible, production-ready application with dynamic board sizing, custom win logic, and enhanced user experience.
+- Play Game: **https://tictactoe.onyekaanene.com/**
 
 ---
 

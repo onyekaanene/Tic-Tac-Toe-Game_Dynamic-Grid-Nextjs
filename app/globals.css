@@ -252,6 +252,7 @@ body {
   gap: 6px;
 }
 
+
 /* ─── Square ────────────────────────────────────────────────────── */
 .square {
   aspect-ratio: 1;
@@ -260,7 +261,7 @@ body {
   justify-content: center;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
-  background: rgb(185, 222, 252);
+  background: rgb(255, 255, 255);
   cursor: pointer;
   transition:
     background 0.14s,
