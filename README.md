@@ -58,4 +58,4 @@ This project extends the classic game into a flexible, production-ready applicat
 
 - Add an AI opponent
 - Save progress on a database
-- y...and many more!
+- ...and many more!
