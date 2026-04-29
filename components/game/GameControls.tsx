@@ -11,28 +11,37 @@ export default function GameControls({
 }: GameControlsProps) {
   return (
     <div className="game-controls">
-      <div className="game-controls__sizes" role="group" aria-label="Board size">
-        <span className="game-controls__label">Size</span>
-        {BOARD_SIZES.map((size) => (
-          <button
-            key={size}
-            className={`game-controls__size-btn ${
-              boardSize === size ? "game-controls__size-btn--active" : ""
-            }`}
-            onClick={() => onBoardSizeChange(size)}
-            aria-pressed={boardSize === size}
-          >
-            {size}×{size}
-          </button>
-        ))}
+      <div className="game-controls__section">
+        <span className="game-controls__label">Board size</span>
+        <div
+          className="game-controls__sizes"
+          role="group"
+          aria-label="Board size"
+        >
+          {BOARD_SIZES.map((size) => (
+            <button
+              key={size}
+              className={`game-controls__size-btn ${
+                boardSize === size ? "game-controls__size-btn--active" : ""
+              }`}
+              onClick={() => onBoardSizeChange(size)}
+              aria-pressed={boardSize === size}
+            >
+              {size}×{size}
+            </button>
+          ))}
+        </div>
       </div>
-      <button
-        className="game-controls__reset"
-        onClick={onReset}
-        aria-label="Start a new game"
-      >
-        New Game
-      </button>
+
+      <div className="game-controls__section">
+        <button
+          className="game-controls__reset"
+          onClick={onReset}
+          aria-label="Start a new game"
+        >
+          New Game
+        </button>
+      </div>
     </div>
   );
 }
