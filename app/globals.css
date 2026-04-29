@@ -14,6 +14,7 @@
   --font-symbol: var(--font-mono), "Courier New", monospace;
 
   /* Palette */
+  --bg-card-white:#f4f8ff;
   --bg:           #080c14;
   --bg-card:      rgba(255, 255, 255, 0.04);
   --bg-card-hover:rgba(255, 255, 255, 0.07);
@@ -28,8 +29,8 @@
   --win-glow:     rgba(255, 217, 61, 0.4);
 
   --text-primary: #f0f4ff;
-  --text-muted:   rgba(240, 244, 255, 0.45);
-  --text-faint:   rgba(240, 244, 255, 0.25);
+  --text-muted:   rgb(255, 248, 248);
+  --text-faint:   rgb(255, 255, 255);
 
   --accent:       #7c6aff;
   --accent-dim:   rgba(124, 106, 255, 0.18);
@@ -273,7 +274,7 @@ body {
  * Sizing strategy:
  *  - Use the smaller of the available width and available height.
  *  - Available height = 100dvh minus header row minus gaps/padding.
- *  - We express this with a CSS custom property set on the wrapper.
+ *  - Express this with a CSS custom property set on the wrapper.
  *  - Hard cap at 480px so it never looks too large on wide screens.
  */
 .board-wrapper {
@@ -302,7 +303,7 @@ body {
    * how many columns there are.
    *
    * Formula: (containerWidth - gaps) / boardSize
-   * We approximate with cqi (container query inline unit):
+   * Approximate with cqi (container query inline unit):
    *   1cqi = 1% of the container's inline (width) size.
    */
   aspect-ratio: 1;
@@ -312,7 +313,7 @@ body {
   justify-content: center;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
-  background: var(--bg-card);
+  background: var(--bg-card-white);
   cursor: pointer;
   transition:
     background 0.14s,
