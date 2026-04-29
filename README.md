@@ -2,7 +2,7 @@
 
 > A production-ready, fully responsive Tic-Tac-Toe game with a dynamic board size, move history, and draw detection — built as a deep-dive into clean Next.js architecture and component design.
 
-**🔗 Live Link:** [tictactoe.onyekaanene.com](https://tictactoe.onyekaanene.com) &nbsp;|&nbsp; **📂 Repo:** [github.com/onyekaanene/tic-tac-toe](https://github.com/onyekaanene/tic-tac-toe)
+**🔗 Live Link Demo:** [tictactoe.onyekaanene.com](https://tictactoe.onyekaanene.com) &nbsp;|&nbsp; **📂 Repo:** [github.com/onyekaanene/tic-tac-toe](https://github.com/onyekaanene/tic-tac-toe)
 
 ---
 
