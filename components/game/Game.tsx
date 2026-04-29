@@ -66,13 +66,18 @@ export default function Game({
 
   return (
     <div className="game">
-      <GameControls
-        boardSize={boardSize}
-        onBoardSizeChange={handleBoardSizeChange}
-        onReset={() => resetGame()}
-      />
       <div className="game__layout">
-        <div className="game__board">
+        {/* Left column — controls */}
+        <aside className="game__col game__col--left">
+          <GameControls
+            boardSize={boardSize}
+            onBoardSizeChange={handleBoardSizeChange}
+            onReset={() => resetGame()}
+          />
+        </aside>
+
+        {/* Centre column — board */}
+        <div className="game__col game__col--centre">
           <Board
             xIsNext={xIsNext}
             squares={currentSquares}
@@ -80,11 +85,15 @@ export default function Game({
             boardSize={boardSize}
           />
         </div>
-        <MoveHistory
-          history={history}
-          currentMove={currentMove}
-          onJumpTo={handleJumpTo}
-        />
+
+        {/* Right column — history */}
+        <aside className="game__col game__col--right">
+          <MoveHistory
+            history={history}
+            currentMove={currentMove}
+            onJumpTo={handleJumpTo}
+          />
+        </aside>
       </div>
     </div>
   );
