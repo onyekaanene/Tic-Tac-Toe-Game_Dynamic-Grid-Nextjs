@@ -112,7 +112,7 @@ tic-tac-toe/
 - [x] Deployed live on Vercel
 
 ### 🔜 Coming Soon
-- [ ] AI opponent (Minimax algorithm)
+- [ ] AI opponent
 - [ ] Score tracking across rounds
 - [ ] Animated winning line drawn across the board
 - [ ] Custom player names
